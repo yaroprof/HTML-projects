@@ -1,0 +1,139 @@
+/* Reset стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, figure {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+input, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: #ffffff;
+}
+
+/* Ваші основні стилі для банера */
+#banner {
+    background-color: #1F2C4C;
+    color: white;
+    padding: 6em 0;
+    text-align: left;
+    position: relative;
+}
+
+#banner .inner {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+#banner h1.major {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+}
+
+#banner hr {
+    border: 0;
+    border-top: 2px solid #ffffff;
+    width: 50%;
+    margin: 1em 0;
+}
+
+#banner p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+#banner .actions {
+    margin-top: 2em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.75em 2em;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: white;
+    color: #1F2C4C;
+}
+
+.button.next {
+    position: relative;
+    padding-right: 2.5em;
+}
+
+.button.next::after {
+    content: '→';
+    position: absolute;
+    right: 1em;
+    transition: right 0.3s;
+}
+
+.button.next:hover::after {
+    right: 0.5em;
+}
+
+@media (max-width: 768px) {
+    #banner h1.major {
+        font-size: 2.5em;
+    }
+
+    #banner hr {
+        width: 75%;
+    }
+
+    #banner p {
+        font-size: 1em;
+    }
+}
