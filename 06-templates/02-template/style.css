@@ -1,0 +1,810 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: #000;
+    background: #f1f1f1;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+}
+
+.search-bar {
+    color: #fff;
+    background: #000;
+    width: 100%;
+}
+
+
+/* Header section */
+
+.header {
+    text-align: center;
+    color: #333;
+    background-color: #f8f9fa;
+    padding: 3rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Search-bar */
+.search-bar nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 30px;
+    gap: 10px;
+}
+
+/* Іконки соцмереж */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ccc;
+}
+
+/* Пошуковий елемент */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    width: 220px;
+}
+
+.search-input {
+    border: none;
+    background: none;
+    color: white;
+    padding: 10px 15px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    transition: width 0.4s ease-in-out;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+.search-button {
+    background-color: #444;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #555;
+}
+
+/* Анімація розширення при фокусі */
+.search-input:focus {
+    width: 250px;
+}
+
+/* Адаптивність для мобільних пристроїв */
+@media (max-width: 600px) {
+    .search-container {
+        width: 150px;
+    }
+
+    .search-input:focus {
+        width: 180px;
+    }
+
+    .search-bar nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
+
+
+.header__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.header__subtitle {
+    font-size: 1.125rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.header__subtitle h1 {
+    font-size: 36px;
+}
+
+.header__subtitle b {
+    font-size: 64px;
+}
+
+.header__name {
+    font-weight: 600;
+    color: #0073e6;
+}
+
+@media (min-width: 768px) {
+    .header {
+        padding: 4rem 1rem;
+    }
+
+    .header__title {
+        font-size: 2.5rem;
+    }
+
+    .header__subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+/* Hero section */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    position: relative;
+    color: #fff;
+    background-color: #000;
+}
+
+.hero__image {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.hero__content {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    text-align: left;
+    max-width: 500px;
+}
+
+.hero__title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.hero__subtitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero__button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.hero__button:hover {
+    opacity: 0.8;
+}
+
+@media (min-width: 768px) {
+    .hero__title {
+        font-size: 2.5rem;
+    }
+
+    .hero__subtitle {
+        font-size: 3.5rem;
+    }
+
+    .hero__button {
+        font-size: 1.25rem;
+    }
+}
+
+
+/* Grid section */
+.grid {
+    padding: 2rem 1rem;
+    background-color: #e0e0e0;
+}
+
+.grid__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Blog */
+.blog {
+    flex: 1 1 65%;
+    /* Залишає 65% простору для основної частини */
+    /* background-color: #ffffff; */
+    padding: 2rem;
+    border: 1px solid #ddd;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.blog__post {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Адаптивність для основної частини */
+@media (max-width: 768px) {
+    .blog {
+        flex: 1 1 100%;
+        /* Зменшує ширину до 100% на малих екранах */
+    }
+}
+
+/* Головка статті */
+.blog__header {
+    margin-bottom: 1.5rem;
+}
+
+.blog__title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.blog__subtitle {
+    font-size: 1.125rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.blog__date {
+    font-size: 0.875rem;
+    color: #888;
+    display: block;
+    margin-bottom: 1.5rem;
+    font-style: italic;
+}
+
+.blog__image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+}
+
+.blog__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.blog__text {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* about Side */
+/*  Card Styles */
+.side-card {
+    background-color: #f9f9f9;
+    margin: 16px 0;
+}
+
+.side__title {
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+}
+
+.side {
+    flex: 1 1 25%;
+    /* Залишає 25% простору для бокової частини */
+    /* background-color: #f9f9f9; */
+    border: 1px solid #ddd;
+    font-family: "Open Sans", sans-serif;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Адаптивність для бокової частини */
+@media (max-width: 768px) {
+    .side {
+        flex: 1 1 100%;
+        /* Зменшує ширину до 100% на малих екранах */
+    }
+}
+
+/* Card styling within about Side */
+.side__card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.side__card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
+
+.side__card-content {
+    padding: 1rem;
+    text-align: left;
+    background: #000;
+}
+
+.side__card-content h4 {
+    color: #fff;
+}
+
+.side__card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.side__card-text {
+    font-size: 1rem;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Posts section */
+/* .posts {
+    margin: 16px 0;
+} */
+
+.posts__card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.posts__card-title {
+    font-size: 20px;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    text-align: left;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.posts__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: #f9f9f9;
+}
+
+.posts__list-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.posts__list-item:last-child {
+    border-bottom: none;
+    /* Прибирає нижню рамку у останнього елементу */
+}
+
+.posts__img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.posts__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.posts__title {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #333;
+}
+
+.posts__text {
+    font-size: 0.875rem;
+    color: #555;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .posts__card-title {
+        font-size: 1.5rem;
+        padding: 0.75rem;
+    }
+
+    .posts__list-item {
+        padding: 10px 12px;
+    }
+
+    .posts__img {
+        width: 40px;
+        height: 40px;
+        margin-right: 12px;
+    }
+
+    .posts__title {
+        font-size: 0.95rem;
+    }
+
+    .posts__text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .posts__card-title {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .posts__list-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 10px;
+    }
+
+    .posts__img {
+        margin: 0 0 8px 0;
+    }
+
+    .posts__title,
+    .posts__text {
+        text-align: left;
+    }
+}
+
+/* Advertise section */
+/* Advertise section */
+.adv {
+    margin: 16px 0;
+}
+
+.adv__card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.adv__card-title {
+    font-size: 20px;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    text-align: left;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.adv__card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 1rem;
+    background: #f9f9f9;
+}
+
+.adv__content-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    height: 98%;
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 200;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Адаптивність */
+@media (max-width: 768px) {
+    .adv__card-title {
+        font-size: 1.5rem;
+        padding: 0.75rem;
+    }
+
+    .adv__card-container {
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .adv__card-title {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .adv__card-container {
+        height: 120px;
+    }
+}
+
+/* Tags section */
+.tags {
+    background-color: #f5f5f5;
+    /* border-radius: 8px; */
+    margin: 16px 0;
+    /* overflow: hidden; */
+}
+
+.tags__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+}
+
+.tags__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 1rem;
+}
+
+.tags__item {
+    background-color: #e0e0e0;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.tags__item--active {
+    background-color: #333;
+    color: #fff;
+}
+
+.tags__item:hover {
+    background-color: #ccc;
+    transform: scale(1.05);
+}
+
+/* Inspiration section */
+.inspiration {
+    background-color: #f9f9f9;
+    margin: 16px 0;
+    /* padding: 1rem; */
+}
+
+.inspiration__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 1rem;
+    background: #000;
+    color: #fff;
+    text-align: left;
+    margin: 0;
+
+}
+
+.inspiration__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Два стовпці на великих екранах */
+    gap: 16px;
+    padding: 1rem;
+}
+
+.gallery__item {
+    transition: transform 0.3s;
+    aspect-ratio: 1 / 1;
+    /* Зберігає квадратну форму */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Зберігає співвідношення сторін і заповнює квадрат */
+}
+
+.gallery__item:hover {
+    transform: scale(1.05);
+}
+
+/* Адаптація для маленьких екранів */
+@media (max-width: 768px) {
+    .inspiration__gallery {
+        grid-template-columns: 1fr;
+        /* Один стовпець на малих екранах */
+    }
+}
+
+
+.gallery__item:hover {
+    transform: scale(1.05);
+}
+
+/* Social section */
+
+.social__container {
+    display: flex;
+    gap: 16px;
+    padding: 1rem;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.social__icon {
+    font-size: 1.5rem;
+    /* Розмір іконок */
+    color: #333;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.social__icon:hover {
+    color: #0073e6;
+    /* Колір іконок при наведенні */
+}
+
+/* Адаптація для маленьких екранів */
+@media (max-width: 600px) {
+    .social__container {
+        gap: 8px;
+        /* Менший проміжок між іконками на маленьких екранах */
+    }
+
+    .social__icon {
+        font-size: 1.25rem;
+        /* Зменшений розмір іконок на маленьких екранах */
+    }
+}
+
+/* ================================
+   Subscribe Section
+   ================================ */
+
+
+/* Title within side card */
+.side-card__title {
+    text-transform: capitalize;
+    /* Capitalize title */
+    font-size: 1.25rem;
+    /* Font size for title */
+    font-weight: bold;
+    /* Bold title */
+    margin-bottom: 1rem;
+    /* Space below title */
+}
+
+/* Container for subscription content */
+.subscribe__container {
+    padding: 1rem;
+}
+
+.subscribe__container p {
+    margin-bottom: 1rem;
+}
+
+/* Input group for better layout */
+.subscribe__input-group {
+    display: flex;
+    /* Flexbox for horizontal alignment */
+    flex-direction: column;
+    /* Stack elements vertically */
+}
+
+.side-card__input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Subscribe button */
+.side-card__btn {
+    color: #fff;
+    /* Text color for button */
+    background-color: #f44336;
+    /* Background color for button */
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Padding inside button */
+    border: none;
+    /* No border */
+    border-radius: 4px;
+    /* Rounded corners for button */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s;
+    /* Transition for hover effect */
+}
+
+/* Change button color on hover */
+.side-card__btn:hover {
+    background-color: #d32f2f;
+    /* Darker red on hover */
+}
+
+/* Media query for responsiveness */
+@media (min-width: 768px) {
+    .subscribe__input-group {
+        flex-direction: column;
+        /* Ensure vertical layout */
+    }
+}

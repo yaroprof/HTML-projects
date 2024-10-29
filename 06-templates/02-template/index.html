@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JANE BLOGLIFE</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <!-- Search bar -->
+    <div class="search-bar">
+        <nav>
+            <!-- Іконки соцмереж -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram social__icon"></i></a>
+                <a href="#"><i class="fab fa-facebook-f social__icon"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in social__icon"></i></a>
+
+            </div>
+
+            <!-- Пошуковий елемент -->
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-input">
+                <button class="search-button"><i class="fa fa-search"></i></button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">JANE BLOGLIFE</h1>
+            <p class="header__subtitle">Welcome to the blog of <span class="header__name">Jane Doe</span></p>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <img src="/images/jane.jpg" alt="Fashion blog background" class="hero__image">
+        <div class="hero__content">
+            <h1 class="hero__title">Jane's</h1>
+            <h2 class="hero__subtitle"><b>FASHION BLOG</b></h2>
+            <button class="hero__button" onclick="document.getElementById('subscribe').style.display='block'">
+                SUBSCRIBE
+            </button>
+        </div>
+    </section>
+
+    <!-- Main content area -->
+    <main class="grid">
+        <div class="grid__container">
+
+            <!-- Blog section -->
+            <article class="blog">
+                <div class="blog__post">
+                    <header class="blog__header">
+                        <h2 class="blog__title">TITLE HEADING</h2>
+                        <h5 class="blog__subtitle">Title description</h5>
+                        <time class="blog__date">May 2, 2016</time>
+                    </header>
+                    <div class="blog__image-wrapper">
+                        <img src="images/girl_hat.jpg" alt="Girl wearing a hat" class="blog__image">
+                    </div>
+                    <p class="blog__text">
+                        <span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Aspernatur voluptatem
+                        asperiores quisquam fuga magni delectus, expedita ducimus impedit ex. Commodi?
+                    </p>
+                    <p class="blog__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, atque.
+                    </p>
+                </div>
+                <div class="blog__post">
+                    <header class="blog__header">
+                        <h2 class="blog__title">TITLE HEADING</h2>
+                        <h5 class="blog__subtitle">Title description</h5>
+                        <time class="blog__date">May 2, 2016</time>
+                    </header>
+                    <div class="blog__image-wrapper">
+                        <img src="images/girl_hat.jpg" alt="Girl wearing a hat" class="blog__image">
+                    </div>
+                    <p class="blog__text">
+                        <span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Aspernatur voluptatem
+                        asperiores quisquam fuga magni delectus, expedita ducimus impedit ex. Commodi?
+                    </p>
+                    <p class="blog__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, atque.
+                    </p>
+                </div>
+                <div class="blog__post">
+                    <header class="blog__header">
+                        <h2 class="blog__title">TITLE HEADING</h2>
+                        <h5 class="blog__subtitle">Title description</h5>
+                        <time class="blog__date">May 2, 2016</time>
+                    </header>
+                    <div class="blog__image-wrapper">
+                        <img src="images/girl_hat.jpg" alt="Girl wearing a hat" class="blog__image">
+                    </div>
+                    <p class="blog__text">
+                        <span>Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit. Aspernatur voluptatem
+                        asperiores quisquam fuga magni delectus, expedita ducimus impedit ex. Commodi?
+                    </p>
+                    <p class="blog__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, atque.
+                    </p>
+                </div>
+
+            </article>
+
+            <!-- Side section -->
+            <aside class="side">
+                <!-- Profile Card -->
+                <div class="side__card">
+                    <img src="images/avatar_girl2.jpg" alt="Profile Image" class="side__card-image">
+                    <div class="side__card-content">
+                        <h4 class="about__card-title">My Name</h4>
+                        <p class="side__card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo alias
+                            placeat minus facere iusto voluptates.</p>
+                    </div>
+                </div>
+
+                <!-- Popular Posts section -->
+                <section class="side-card">
+                    <h4 class="side__title">Popular Posts</h4>
+                    <ul class="posts__list">
+                        <li class="posts__list-item">
+                            <img src="images/avatar_smoke.jpg" alt="avatar" class="posts__img">
+                            <div class="posts__content">
+                                <span class="posts__title">Denim</span>
+                                <span class="posts__text">Sed mattis nunc</span>
+                            </div>
+                        </li>
+                        <li class="posts__list-item">
+                            <img src="images/bandmember.jpg" alt="avatar" class="posts__img">
+                            <div class="posts__content">
+                                <span class="posts__title">Sweaters</span>
+                                <span class="posts__text">Praes tinci sed</span>
+                            </div>
+                        </li>
+                        <li class="posts__list-item">
+                            <img src="images/workshop.jpg" alt="avatar" class="posts__img">
+                            <div class="posts__content">
+                                <span class="posts__title">Workshop</span>
+                                <span class="posts__text">Ultricies congue</span>
+                            </div>
+                        </li>
+                        <li class="posts__list-item">
+                            <img src="images/avatar_smoke.jpg" alt="avatar" class="posts__img">
+                            <div class="posts__content">
+                                <span class="posts__title">Denim</span>
+                                <span class="posts__text">Sed mattis nunc</span>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Advertise section -->
+                <div class="side-card">
+                    <h4 class="side__title">Advertise</h4>
+                    <div class="adv__card-container">
+                        <div class="adv__content-box">
+                            <span>Your AD Here</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tags section -->
+                <section class="side-card">
+                    <h4 class="side__title">Tags</h4>
+                    <div class="tags__container">
+                        <span class="tags__item tags__item--active">Fashion</span>
+                        <span class="tags__item">New York</span>
+                        <span class="tags__item">London</span>
+                        <span class="tags__item">Hats</span>
+                        <span class="tags__item">Norway</span>
+                        <span class="tags__item">Sweaters</span>
+                        <span class="tags__item">Ideas</span>
+                        <span class="tags__item">Deals</span>
+                        <span class="tags__item">Accessories</span>
+                        <span class="tags__item">News</span>
+                        <span class="tags__item">Clothing</span>
+                        <span class="tags__item">Shopping</span>
+                        <span class="tags__item">Jeans</span>
+                        <span class="tags__item">Trends</span>
+                    </div>
+                </section>
+
+                <!-- Inspiration section -->
+                <section class="side-card">
+                    <h4 class="side__title">Inspiration</h4>
+                    <div class="inspiration__gallery">
+                        <div class="gallery__item">
+                            <img src="images/jeans.jpg" alt="jeans">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="images/jeans.jpg" alt="jeans">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="images/jeans.jpg" alt="jeans">
+                        </div>
+                        <div class="gallery__item">
+                            <img src="images/jeans.jpg" alt="jeans">
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Social section -->
+                <div class="side-card">
+                    <h4 class="side__title">Follow me</h4>
+                    <div class="social__container">
+                        <i class="fab fa-facebook-f social__icon"></i>
+                        <i class="fab fa-x social__icon"></i>
+                        <i class="fab fa-instagram social__icon"></i>
+                        <i class="fab fa-linkedin-in social__icon"></i>
+                    </div>
+                </div>
+
+                <!-- Subscribe section -->
+                <div class="side-card">
+                    <h4 class="side__title">Subscribe</h4>
+                    <div class="subscribe__container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, sequi.</p>
+                        <div class="subscribe__input-group">
+                            <input type="email" class="side-card__input" placeholder="Enter e-mail" required>
+                            <button type="submit" class="side-card__btn">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </aside>
+
+
+
+
+
+
+
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 JANE BLOGLIFE. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
