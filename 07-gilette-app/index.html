@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template with BEM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+<!-- Header -->
+<header class="header">
+    <div class="header__container">
+        <button class="header__toggle-btn">☰</button>
+
+        <nav class="header__navbar header__navbar--left">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Get A Free Razor</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Products</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Shaving Tips</a></li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">About</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__logo">
+            <img src="images/logo-blue.png" alt="Logo">
+        </div>
+
+        <nav class="header__navbar header__navbar--right">
+            <ul class="header__icon-list">
+                <li class="header__icon-item"><i class="fas fa-user" aria-hidden="true"></i><span class="sr-only">Profile</span></li>
+                <li class="header__icon-item"><i class="fas fa-search" aria-hidden="true"></i><span class="sr-only">Search</span></li>
+                <li class="header__icon-item"><i class="fas fa-shopping-cart" aria-hidden="true"></i><span class="sr-only">Cart</span></li>
+                <li class="header__icon-item"><i class="fas fa-flag" aria-hidden="true"></i><span class="sr-only">Country</span></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+
+
+    <section class="hero-slider">
+        <div class="hero-slider__container">
+            <div class="hero-slider__slide">
+                <h2 class="hero-slider__title">HERO SLIDER</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="gift">
+        <div class="gift__container">
+            <h2 class="gift__title">THE GIFT OF GROOMING</h2>
+            <p class="gift__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="products__container">
+            <div class="products__item">
+                <h3 class="products__title">Product 1</h3>
+            </div>
+            <div class="products__item">
+                <h3 class="products__title">Product 2</h3>
+            </div>
+            <div class="products__item">
+                <h3 class="products__title">Product 3</h3>
+            </div>
+            <div class="products__item">
+                <h3 class="products__title">Product 4</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features__container">
+            <div class="features__item">
+                <h3 class="features__title">Feature 1</h3>
+            </div>
+            <div class="features__item">
+                <h3 class="features__title">Feature 2</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="sensitive">
+        <div class="sensitive__container">
+            <h2 class="sensitive__title">FOR SENSITIVE SKIN</h2>
+            <p class="sensitive__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <h2 class="footer__title">FOOTER</h2>
+        </div>
+    </footer>
+</body>
+</html>
+

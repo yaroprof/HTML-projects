@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template with BEM</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <nav class="header__nav header__nav--left">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Get A Free Razor</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Products</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">Shaving Tips</a></li>
+                    <li class="header__nav-item"><a href="#" class="header__nav-link">About</a></li>
+                </ul>
+            </nav>
+            <div class="header__logo">
+                <img src="images/logo-blue.png" alt="Logo">
+            </div>
+            <nav class="header__nav header__nav--right">
+                <ul class="header__icon-list">
+                    <li class="header__icon-item"><a href="#"><i class="fas fa-user"></i></a></li>
+                    <li class="header__icon-item"><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li class="header__icon-item"><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li class="header__icon-item"><a href="#"><i class="fas fa-flag-usa"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <div class="hero">
+        <div class="hero__content">
+            <h2 class="hero__subtitle">KING C. GILLETTE</h2>
+            <h1 class="hero__title">FACIAL HAIR THAT FEELS AS GOOD AS IT LOOKS</h1>
+            <p class="hero__description">
+                A complete lineup of products designed to help you take care of your facial hair in 3 easy steps. Just
+                trim, wash, and soften for noticeably better facial hair.
+            </p>
+            <button class="hero__button">SHOP NOW</button>
+        </div>
+        <div class="hero__image">
+            <!-- Background image can be added via CSS -->
+        </div>
+    </div>
+
+    <!-- Products section -->
+    <section class="products">
+        <h2 class="products__title">The Gift of Grooming</h2>
+        <p class="products__subtitle">Don't know what to get? The gift of smooth skin and sharp shaves is always in
+            season.</p>
+        <div class="products__grid">
+
+            <div class="product-card">
+                <img src="images/product-1.jpg" alt="GilletteLabs Exfoliating Bar Razor" class="product-card__image">
+                <h3 class="product-card__name">GilletteLabs with Exfoliating Bar Razor (1 Handle + 3 Cartridges + 1
+                    Travel Case)</h3>
+                <p class="product-card__description">GilletteLabs razor for a shave as quick and easy as washing your
+                    face.</p>
+                <p class="product-card__price">$30</p>
+                <button class="product-card__button">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product-2.jpg" alt="Heated Razor Starter Kit" class="product-card__image">
+                <h3 class="product-card__name">Heated Razor Starter Kit by GilletteLabs</h3>
+                <p class="product-card__description">The Heated Razor Starter Kit includes: Heated Razor, 2x
+                    GilletteLabs blades, and charging station.</p>
+                <p class="product-card__price">$150</p>
+                <button class="product-card__button">Shop Now</button>
+            </div>
+            <div class="product-card">
+                <img src="images/product-3.jpg" alt="Bugatti Special Edition Heated Razor" class="product-card__image">
+                <h3 class="product-card__name">GilletteLabs | Bugatti Special Edition Heated Razor</h3>
+                <p class="product-card__description">Witness artistry at its finest, as the world's first heated razor
+                    meets an automotive legend.</p>
+                <p class="product-card__price">$170</p>
+                <button class="product-card__button">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles section -->
+    <section class="articles">
+        <article class="article">
+            <img src="images/article-1.jpg" alt="" class="article__image">
+            <div class="article__content">
+                <p class="article__tagline">FOR PUBIC HAIR AND SKIN</p>
+                <h2 class="article__title">GILLETTE INTIMATE</h2>
+                <p class="article__description">Our men’s intimate grooming line. Gentle, precise and simple.</p>
+                <a href="" class="article__button">Learn More</a>
+            </div>
+        </article>
+        <article class="article">
+            <img src="images/article-2.jpg" alt="" class="article__image">
+            <div class="article__content">
+                <p class="article__tagline">FOR PUBIC HAIR AND SKIN</p>
+                <h2 class="article__title">GILLETTE INTIMATE</h2>
+                <p class="article__description">Our men’s intimate grooming line. Gentle, precise and simple.</p>
+                <a href="" class="article__button">Learn More</a>
+            </div>
+        </article>
+        <article class="article">
+            <img src="images/article-3.jpg" alt="" class="article__image">
+            <div class="article__content">
+                <p class="article__tagline">FOR PUBIC HAIR AND SKIN</p>
+                <h2 class="article__title">GILLETTE INTIMATE</h2>
+                <p class="article__description">Our men’s intimate grooming line. Gentle, precise and simple.</p>
+                <a href="" class="article__button">Learn More</a>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- footer container -->
+        <div class="footer__container">
+
+            <!-- signup -->
+            <div class="footer__signup">
+                <!-- footer-signup -->
+                <p class="footer__signup-text">Sign up for Gillette emails to receive exclusive offers and updates.</p>
+                <form action="" class="footer__form">
+
+                    <input type="text" placeholder="Your email address" class="footer__input" required>
+
+                    <button class="footer__button">Subscribe</button>
+                </form>
+                <p class="footer__agreement">
+                    By proceeding, I agree to receive emails from Gillette and other trusted
+                    <a href="#" class="footer__link">P&G brands and programs</a>. Click to read <a href="#"
+                        class="footer__link">P&G Terms & Conditions</a> and <a href="#" class="footer__link">P&G Privacy
+                        Policy</a>.
+                </p>
+
+            </div>
+
+            <!-- footer-sections -->
+            <div class="footer__sections">
+
+                <!-- 1-section- explore -->
+                <div class="footer__section footer__section--explore">
+                    <h3 class="footer__title">Explore</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="Coupons" class="footer__link">Coupons</a></li>
+                        <li class="footer__item"><a href="Coupons" class="footer__link">Careers</a></li>
+                        <li class="footer__item"><a href="Coupons" class="footer__link">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <!-- 2-section- resources  -->
+                <div class="footer__section footer__section--resources">
+                    <h3 class="footer__title">Resources</h3>
+                    <ul class="footer__list">
+                        <li class="li footer__item"><a href="#" class="footer__link">P&G Preference Center</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Terms and Conditions</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Consumer Health Data Privacy Policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Privacy (SP)</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Store Policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Accessibility</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Do Not Sell or Share My Personal Information</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Your Privacy Choices</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Give Feedback On Our Website</a></li>
+                    </ul>
+                </div>
+
+                <!-- 3-section- help  -->
+                <div class="footer__section footer__section--help">
+                    <div class="h3 footer__title">Get help</div>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="#" class="footer__link">Order Status</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Order Status</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Order Status</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Order Status</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
