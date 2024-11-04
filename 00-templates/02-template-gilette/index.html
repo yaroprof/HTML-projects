@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -14,6 +14,14 @@
     <!-- Header -->
     <header class="header">
         <div class="header__container">
+
+            <!-- nav toggle button -->
+            <button class="header__toggle-btn" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+
+            <!-- nav left -->
             <nav class="header__nav header__nav--left">
                 <ul class="header__nav-list">
                     <li class="header__nav-item"><a href="#" class="header__nav-link">Get A Free Razor</a></li>
@@ -22,9 +30,11 @@
                     <li class="header__nav-item"><a href="#" class="header__nav-link">About</a></li>
                 </ul>
             </nav>
+            <!-- logo -->
             <div class="header__logo">
                 <img src="images/logo-blue.png" alt="Logo">
             </div>
+            <!-- nav right -->
             <nav class="header__nav header__nav--right">
                 <ul class="header__icon-list">
                     <li class="header__icon-item"><a href="#"><i class="fas fa-user"></i></a></li>
@@ -34,23 +44,151 @@
                 </ul>
             </nav>
         </div>
+
+        <!-- toggle-menu -->
+        <div class="header__menu ">
+            <button class="header__menu-close-btn" aria-label="Close navigation">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="header__menu-list">
+                <li class="header__menu-item">
+                    <a href="" class="header__menu-link">Get A Free Razor</a>
+                </li>
+
+                <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">Products</a>
+                    <!-- drop down menu -->
+                    <button class="header__dropdown-toggle" aria-label="Toggle dropdown">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="header__dropdown-menu">
+                        <li class="header__dropdown-link">All Products</li>
+                        <li><a href="#" class="header__dropdown-link">Starter Kits</a></li>
+                        <li><a href="#" class="header__dropdown-link">GilletteLabs</a></li>
+                        <li><a href="#" class="header__dropdown-link">Razor Handles</a></li>
+                        <li><a href="#" class="header__dropdown-link">Razor Refills</a></li>
+                    </ul>
+                </li>
+
+
+                <li class="header__menu-item"><a href="#" class="header__menu-link">Shaving Tips</a></li>
+                <li class="header__menu-item"><a href="#" class="header__menu-link">About</a></li>
+            </ul>
+        </div>
+
     </header>
 
     <!-- Hero section -->
-    <div class="hero">
-        <div class="hero__content">
-            <h2 class="hero__subtitle">KING C. GILLETTE</h2>
-            <h1 class="hero__title">FACIAL HAIR THAT FEELS AS GOOD AS IT LOOKS</h1>
-            <p class="hero__description">
-                A complete lineup of products designed to help you take care of your facial hair in 3 easy steps. Just
-                trim, wash, and soften for noticeably better facial hair.
-            </p>
-            <button class="hero__button">SHOP NOW</button>
+
+    <!-- Hero-v02 -->
+
+    <section class="hero">
+        <div class="hero__slider">
+            <div class="hero__slides">
+
+                <div class="hero__slide hero__slide--active">
+                    <p style="color: red">SLIDE-1 </p>
+                    <div class="hero__content">
+                        <h2 class="hero__subtitle">KING C. GILLETTE</h2>
+                        <h1 class="hero__title">FACIAL HAIR THAT FEELS AS GOOD AS IT LOOKS</h1>
+                        <p class="hero__description">
+                            A complete lineup of products designed to help you take care of your facial hair in 3 easy
+                            steps. Just
+                            trim, wash, and soften for noticeably better facial hair.
+                        </p>
+                        <button class="hero__button">SHOP NOW</button>
+                    </div>
+                    <div class="hero__image">
+                    </div>
+                </div>
+
+                <div class="hero__slide">
+                    <p style="color: red">SLIDE-2 </p>
+                    <div class="hero__content">
+                        <h2 class="hero__subtitle">KING C. GILLETTE</h2>
+                        <h1 class="hero__title">FACIAL HAIR THAT FEELS AS GOOD AS IT LOOKS</h1>
+                        <p class="hero__description">
+                            A complete lineup of products designed to help you take care of your facial hair in 3 easy
+                            steps. Just
+                            trim, wash, and soften for noticeably better facial hair.
+                        </p>
+                        <button class="hero__button">SHOP NOW</button>
+                    </div>
+                    <div class="hero__image">
+                    </div>
+                </div>
+
+                <!-- SLIDE#3 -->
+                <div class="hero__slide">
+                    <p style="color: red">SLIDE-3 </p>
+                    <div class="hero__content">
+                        <h2 class="hero__subtitle">KING C. GILLETTE</h2>
+                        <h1 class="hero__title">FACIAL HAIR THAT FEELS AS GOOD AS IT LOOKS</h1>
+                        <p class="hero__description">
+                            A complete lineup of products designed to help you take care of your facial hair in 3 easy
+                            steps. Just
+                            trim, wash, and soften for noticeably better facial hair.
+                        </p>
+                        <button class="hero__button">SHOP NOW</button>
+                    </div>
+                    <div class="hero__image">
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-        <div class="hero__image">
-            <!-- Background image can be added via CSS -->
+
+        <button class="hero__slide-button hero__slide-button--prev"><i class="fa-solid fa-arrow-left"></i></button>
+        <button class="hero__slide-button hero__slide-button--next"><i class="fa-solid fa-arrow-right"></i></button>
+
+    </section>
+
+
+    <!-- <div class="hero">
+        <div class="hero__slider-1">
+            <div class="hero__content">
+                <h2 class="hero__subtitle">KING C. GILLETTE</h2>
+                <h1 class="hero__title">FACIAL HAIR THAT FEELS AS GOOD AS IT LOOKS</h1>
+                <p class="hero__description">
+                    A complete lineup of products designed to help you take care of your facial hair in 3 easy steps. Just
+                    trim, wash, and soften for noticeably better facial hair.
+                </p>
+                <button class="hero__button">SHOP NOW</button>
+            </div>
+            <div class="hero__image">
+             </div>
         </div>
+        <div class="hero__slider-2">
+            <div class="hero__content">
+                <h2 class="hero__subtitle">KING C. GILLETTE</h2>
+                <h1 class="hero__title">FACIAL HAIR THAT FEELS AS GOOD AS IT LOOKS</h1>
+                <p class="hero__description">
+                    A complete lineup of products designed to help you take care of your facial hair in 3 easy steps. Just
+                    trim, wash, and soften for noticeably better facial hair.
+                </p>
+                <button class="hero__button">SHOP NOW</button>
+            </div>
+            <div class="hero__image">
+            </div>
+        </div>
+        <div class="hero__slider-3">
+            <div class="hero__content">
+                <h2 class="hero__subtitle">KING C. GILLETTE</h2>
+                <h1 class="hero__title">FACIAL HAIR THAT FEELS AS GOOD AS IT LOOKS</h1>
+                <p class="hero__description">
+                    A complete lineup of products designed to help you take care of your facial hair in 3 easy steps. Just
+                    trim, wash, and soften for noticeably better facial hair.
+                </p>
+                <button class="hero__button">SHOP NOW</button>
+            </div>
+            <div class="hero__image">
+             
     </div>
+    </div>
+    </div>
+<-- -->
+
 
     <!-- Products section -->
     <section class="products">
@@ -163,11 +301,13 @@
                         <li class="li footer__item"><a href="#" class="footer__link">P&G Preference Center</a></li>
                         <li class="footer__item"><a href="#" class="footer__link">Terms and Conditions</a></li>
                         <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Consumer Health Data Privacy Policy</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Consumer Health Data Privacy
+                                Policy</a></li>
                         <li class="footer__item"><a href="#" class="footer__link">Privacy (SP)</a></li>
                         <li class="footer__item"><a href="#" class="footer__link">Store Policy</a></li>
                         <li class="footer__item"><a href="#" class="footer__link">Accessibility</a></li>
-                        <li class="footer__item"><a href="#" class="footer__link">Do Not Sell or Share My Personal Information</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Do Not Sell or Share My Personal
+                                Information</a></li>
                         <li class="footer__item"><a href="#" class="footer__link">Your Privacy Choices</a></li>
                         <li class="footer__item"><a href="#" class="footer__link">Give Feedback On Our Website</a></li>
                     </ul>

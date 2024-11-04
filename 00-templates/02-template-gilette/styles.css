@@ -106,7 +106,118 @@ ul li{
     }
 }
 
+/* === toggle-menu === */
+.header__toggle-btn{
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header__menu{
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 80%;
+    max-width: 300px;
+    height: 100%;
+
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.5s ease;
+    /* padding: 20px; */
+    z-index: 100;
+    background-color: var(--white);
+}
+
+.header__menu.active{
+    left: 0;
+}
+
+.header__menu-close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+
+.header__menu-list{
+    padding: 0;
+    margin-top: 40px;
+}
+
+.header__menu-list li a{
+    text-decoration: none;
+}
+
+.header__menu-item{
+    margin-bottom: 15px;
+}
+
+.header__menu-link{
+    color: #0e1a2b;
+    font-size: 1.3rem;
+    padding: 0 20px;
+}
+
+/* responsive */
+@media (max-width: 768px){
+    .header__toggle-btn{
+        display: block;
+    }
+
+    .header__nav--left{
+        display: none;
+    }
+}
+
+@media (min-width: 768px){
+    .header__menu{
+        display: none;
+    }
+}
+
+/* === toggle dropdown */
+.header__dropdown-toggle{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2 rem;
+    color: var(--dark-color);
+    margin-left: 5px;
+}
+
+.header__dropdown-menu{
+    /* display: none; */
+    padding: 10px 20px;
+    margin: 0;
+    background-color: var(--gray);
+    /* border-left: 3px solid var(--dark-color); */
+}
+
+.header__dropdown-menu li{
+    margin: 8px 0;
+}
+
+.header__dropdown-link{
+    color:  var(--dark-color);
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
 /* === Hero Section === */
+
 .hero {
     display: flex;
     justify-content: left;
@@ -119,7 +230,9 @@ ul li{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    margin-top: 60px;
     padding: 0 40px;
+
 }
 
 .hero__content {
@@ -185,6 +298,70 @@ ul li{
         font-size: 0.9rem;
     }
 }
+
+/* === Hero - Slider */
+.hero__slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.hero__slides {
+    /* display: flex; */
+    width: 100%;
+}
+
+.hero__slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    /* background-color: var(--sky-color); */
+    text-align: center;
+}
+
+.hero__slide:not(.hero__slide--active) {
+    display: none;
+}
+
+.hero__slide-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent; /* Зробити фон кнопки прозорим */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 24px;
+}
+
+.hero__slide-button i {
+    font-size: 1.5em; 
+    transition: transform 0.3s ease; 
+}
+
+.hero__slide-button:hover i {
+    transform: scale(1.1); 
+}
+
+.hero__slide-button--prev {
+    left: 20px;
+}
+
+.hero__slide-button--next {
+    right: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero__slide {
+        padding: 20px;
+    }
+
+    .hero__button {
+        padding: 8px 10px;
+    }
+}
+
+
 
 /* === Products section === */
 
