@@ -1,129 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Website</title>
+    <title>Head and shoulders-app</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
+
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="header-container">
-            <!-- Logo -->
-            <div class="logo">
-                <a href="#">Head & Shoulders</a>
-            </div>
-            <!-- Navigation -->
-            <nav>
-                <ul>
-                    <li><a href="#">Bare & Scalp Quiz</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">Scalp Advice</a></li>
-                    <li><a href="#">Why H&S</a></li>
-                    <li><a href="#">News & Partnerships</a></li>
+    <header id="home">
+        <nav class="navbar">
+            <div class="nav-center">
+                <div class="nav-header">
+                    <img src="./images/logo.svg" class="nav-logo" alt="Logo" />
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home" class="scroll-link nav-link">HAIR & SCALP QUIZ</a></li>
+                    <li><a href="#about" class="scroll-link nav-link">SHOP</a></li>
+                    <li><a href="#services" class="nav-link scroll-link">SCALP ADVICE</a></li>
+                    <li><a href="#featured" class="nav-link scroll-link">WHY H&S</a></li>
+                    <li><a href="#news" class="nav-link scroll-link">NEWS & PARTNERSHIPS</a></li>
+                    <li><a href="#search" class="nav-search-icon"><i class="fas fa-search"></i></a></li>
                 </ul>
-            </nav>
-            <!-- Search Icon -->
-            <div class="search-icon">
-                <a href="#"><i class="fa fa-search" aria-hidden="true"></i>
-</a>
+                <button type="button" class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
-        </div>
+        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Minimal Ingredients, Dandruff Protection</h1>
-            <button>Buy Now</button>
-        </div>
-        <div class="hero-image">
-            <img src="hero-product.png" alt="Product Image">
-        </div>
-    </section>
-
-    <!-- Collections Section -->
-    <section class="collections">
-        <h2>Shop Our Collections</h2>
-        <div class="collections-grid">
-            <!-- Collection Items -->
-            <div class="collection-item">...</div>
-            <div class="collection-item">...</div>
-            <div class="collection-item">...</div>
-            <div class="collection-item">...</div>
-        </div>
-    </section>
-
-    <!-- Scalp Concerns Section -->
-    <section class="scalp-concerns">
-        <h2>Find the Right Solution Based on Your Scalp Concerns</h2>
-        <div class="scalp-concerns-grid">
-            <!-- Concern Items -->
-            <div class="concern-item">...</div>
-            <div class="concern-item">...</div>
-            <div class="concern-item">...</div>
-        </div>
-    </section>
-
-    <!-- Scalp & Hair Care Tips Section -->
-    <section class="hair-care-tips">
-        <h2>Scalp & Hair Care Tips</h2>
-        <div class="tips-grid">
-            <!-- Tip Items -->
-            <div class="tip-item">...</div>
-            <div class="tip-item">...</div>
-            <div class="tip-item">...</div>
-        </div>
-    </section>
-
-    <!-- Global Branding Section -->
-    <section class="global-branding">
-        <h2>The World's #1 Shampoo and #1 Derm Recommended Brand</h2>
-        <div class="global-branding-image">
-            <img src="product-in-water.png" alt="Product Image in Water">
-        </div>
-    </section>
-
-    <!-- Sustainability Section -->
-    <section class="sustainability">
-        <h2>Ingredient Transparency & Sustainability</h2>
-        <p>Learn more about what's in our products, what makes them different...</p>
-        <button>Learn More</button>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <div class="footer-container">
-            <!-- Footer Links Sections -->
-            <div class="footer-links">
-                <h3>Products</h3>
-                <ul>
-                    <li><a href="#">Shampoos</a></li>
-                    <li><a href="#">Conditioners</a></li>
-                </ul>
+    <section class="section hero">
+        <div class="section-center hero-center">
+            <div class="hero-info">
+                <h1>Minimal Ingredients</h1>
+                <h2>Dandruff Protection</h2>
+                <button class="btn">Buy Now</button>
             </div>
-            <div class="footer-links">
-                <h3>Tips and Advice</h3>
-                <ul>
-                    <li><a href="#">Sensitive Scalp</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h3>About</h3>
-                <ul>
-                    <li><a href="#">Philosophy</a></li>
-                </ul>
-            </div>
-            <div class="footer-links">
-                <h3>Support</h3>
-                <ul>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <div class="hero-img">
+                <img src="./images/img1.webp" alt="Product Image" class="hero-photo">
             </div>
         </div>
-    </footer>
+
+
+    </section>
+
+    <!-- Products section | slider -->
+    <section class="section product-slider">
+        <h2 class="section-title">Shop our Collection</h2>
+        <div class="section-center product-center">
+
+            <article class="product-item">
+                <img src="/images/prod1.webp" alt="shampoo">
+                <h4 class="product-title">Test1</h4>
+                <p class="product-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi.</p>
+            </article>
+            <article class="product-item">
+                <img src="/images/prod2.webp" alt="shampoo">
+                <h4 class="product-title">Test1</h4>
+                <p class="product-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi.</p>
+            </article>
+            <article class="product-item">
+                <img src="/images/prod3.webp" alt="shampoo">
+                <h4 class="product-title">Test1</h4>
+                <p class="product-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi.</p>
+            </article>
+            <article class="product-item">
+                <img src="/images/prod4.webp" alt="shampoo">
+                <h4 class="product-title">Test1</h4>
+                <p class="product-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi.</p>
+            </article>
+            <article class="product-item">
+                <img src="/images/prod4.webp" alt="shampoo">
+                <h4 class="product-title">Test1</h4>
+                <p class="product-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, commodi.</p>
+            </article>
+
+        </div>
+
+        <div class="product-btn">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
 </body>
+
 </html>
