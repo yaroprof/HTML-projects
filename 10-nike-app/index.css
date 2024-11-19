@@ -1,0 +1,132 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    flex-wrap: wrap;
+  }
+  
+  .header__menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+  }
+  
+  .header__menu li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+
+  .header__search-input{
+    border: 0;
+    cursor: text;
+    background: #eee;
+    margin: 0;
+    padding: 7px 0px 9px 9px;
+    width: 100%;
+    height: 36px;
+    box-sizing: border-box;
+    border-radius: 24px;
+  }
+
+  .header__input{
+    margin-left: 25px;
+  }
+  
+  .header__icons .icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 20px;
+    background: no-repeat center/contain;
+
+    border: 1px solid red;
+  }
+  
+  /* Banner */
+  .banner {
+    position: relative;
+  }
+  
+  .banner__image {
+    width: 100%;
+  }
+  
+  .banner__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .banner__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .banner__cta {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Sections (General) */
+  .section-title {
+    font-size: 1.5rem;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  .latest__grid,
+  .icons__carousel,
+  .sports__grid,
+  .new-week__grid,
+  .explore__carousel {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
