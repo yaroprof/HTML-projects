@@ -1,0 +1,96 @@
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.header .input-wrapper {
+    display: none;
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--white);
+    padding-block: 15px;
+    z-index: 4;
+}
+
+.header.active {
+    position: fixed;
+    transform: translateY(-100%);
+    box-shadow: var(--shadow);
+    animation: slideIn 0.5s ease forwards;
+    /* background: var(--granite-gray); */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+
+    border: 2px solid #d21515;
+}
+
+.logo{
+    font-size: 3.3rem;
+    font-weight: var(--fw-700);
+}
+
+.header-action{
+    display: flex;
+    gap: 15px;
+}
+
+.header-action-btn{
+    position: relative;
+    font-size: 24px;
+    transition: var(--transition-1);
+}
+
+.header-action-btn .btn-bage{
+    background-color: var(--tan-crayola);
+    color: var(--white);
+    font-size: var(--fs-6);
+    font-weight: var(--fw-500);
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    padding-inline: 6px 10px;
+    border-radius: 50%;
+}
+
+@media (min-width: 575px) {
+    .header .input-wrapper{
+        display: block;
+        position: relative;
+    }
+
+    .header .input-field{
+        padding-block: 10px;
+        padding-inline-end: 30px;
+        border-block-end: 1px solid var(--black_25);
+        
+    }
+}
+
+@media (min-width: 768px) {
+    .header-action {
+        gap: 35px;
+    }
+
+    .header .input-wrapper{
+        width: 200px;
+    }
+}
